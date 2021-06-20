@@ -1,6 +1,6 @@
 {
   "name": "@oyooyo/dcc-sdk",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Verifiable QR SDK for EU Digital Covid Certificates. Fork of the original version that uses synchronous functions whenever possible.",
   "private": false,
   "main": "lib/index.js",
@@ -17,6 +17,10 @@
   "bugs": {
     "url": "https://github.com/oyooyo/dcc-sdk.js/issues"
   },
+  "files": [
+    "lib/**/*.js",
+    "scripts/**/*.js"
+  ],
   "author": "Vitor Pamplona",
   "license": "GPL-3.0-only",
   "dependencies": {
