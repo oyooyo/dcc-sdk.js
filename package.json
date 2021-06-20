@@ -1,7 +1,7 @@
 {
-  "name": "@pathcheck/dcc-sdk",
+  "name": "@oyooyo/dcc-sdk",
   "version": "0.0.11",
-  "description": "Verifiable QR SDK for EU Digital Covid Certificates",
+  "description": "Verifiable QR SDK for EU Digital Covid Certificates. Fork of the original version that uses synchronous functions whenever possible.",
   "private": false,
   "main": "lib/index.js",
   "module": "lib/main.js",
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Path-Check/dcc-sdk.js"
+    "url": "https://github.com/oyooyo/dcc-sdk.js"
   },
   "bugs": {
-    "url": "https://github.com/Path-Check/dcc-sdk.js/issues"
+    "url": "https://github.com/oyooyo/dcc-sdk.js/issues"
   },
   "author": "Vitor Pamplona",
   "license": "GPL-3.0-only",
