@@ -2,6 +2,14 @@
 
 JavaScript Implementation of [EU's Digital Covid Certificates](https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/covid-19-digital-green-certificates_en), a CBOR/COSE-based Verifiable QR Credentials. 
 
+## This is a fork
+
+**This is a fork** of the [original dcc-sdk.js](https://github.com/Path-Check/dcc-sdk.js) by [PathCheck](https://www.pathcheck.org) that basically only differs from the original version by **using synchronous code** whenever possible. **Currently, the API of this fork is fully synchronous**.
+
+While Javascript makes dealing with asynchronous code quite easy, fully synchronous code is still a little more convenient sometimes, for example when used in React components.
+
+When using modern Javascript code with `async/await` (instead of directly dealing with low-level `Promise`s), this fork should also work as a drop-in-replacement for the original version, as `await` works for calling both synchronous and asynchronous functions.
+
 # Install
 
 ```sh
@@ -95,13 +103,13 @@ const TEST_PAYLOAD = {
 Call the signAndPack to create the URI for the QR Code: 
 
 ```js
-const qrUri = await signAndPack(await makeCWT(TEST_PAYLOAD), PUBLIC_KEY_PEM, PRIVATE_KEY_P8);
+const qrUri = signAndPack(await makeCWT(TEST_PAYLOAD), PUBLIC_KEY_PEM, PRIVATE_KEY_P8);
 ```
 
 And call the unpack and verify to convert the URI into the payload: 
 
 ```js
-const payload = await unpackAndVerify(qrUri);
+const payload = unpackAndVerify(qrUri);
 ```
 
 # Development
