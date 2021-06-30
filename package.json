@@ -1,5 +1,5 @@
 {
-  "name": "@oyooyo/dcc-sdk",
+  "name": "@oyo/dcc-sdk",
   "version": "0.0.12",
   "description": "Verifiable QR SDK for EU Digital Covid Certificates. Fork of the original version that uses synchronous functions whenever possible.",
   "private": false,
